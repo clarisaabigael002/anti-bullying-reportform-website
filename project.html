@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STOP BULLYING | Speak Up</title>
+
+    <link rel="stylesheet" href="project.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="logo">CG StandUp<span>.</span></div>
+
+        <nav>
+            <button class="nav-btn active" onclick="showPage('home', this)">Home</button>
+            <button class="nav-btn" onclick="showPage('about', this)">About Us</button>
+            <button class="nav-btn" onclick="showPage('form', this)">Our Form</button>
+        </nav>
+    </header>
+
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+
+
+        <div class="hero">
+
+            <div class="left-side">
+
+                <p class="tag">STOP BULLYING CAMPAIGN</p>
+
+                <h1>
+                    YOUR VOICE.<br>
+                    YOUR POWER.<br>
+                    <span>STOP BULLYING.</span>
+                </h1>
+
+                <p class="description">
+                    Bullying is never okay. Everyone deserves to feel safe,
+                    respected, and accepted for who they are.
+
+                    Speak up, stand together, and make a difference.
+                </p>
+
+                <button class="main-btn" onclick="showPage('form')">
+                    REPORT BULLYING →
+                </button>
+
+                <div class="moving-text">
+                    <div class="moving-track">
+                        BE KIND • SPREAD LOVE • STOP BULLYING •
+                        YOUR VOICE MATTERS • BE KIND • SPREAD LOVE •
+                        STOP BULLYING • YOUR VOICE MATTERS •
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- PHONE MOCKUP WITH YOUR POSTER -->
+            <div class="right-side">
+
+                <div class="phone">
+
+                    <div class="phone-camera"></div>
+
+                    <div class="phone-screen">
+                        <img src="c:\Users\lenovo\Downloads\STOP BULLYING (3).png" alt="Stop Bullying Poster">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT US PAGE -->
+    <section id="about" class="page">
+
+        <div class="content-page">
+
+            <p class="tag">GET TO KNOW US</p>
+
+            <h1>ABOUT <span>US.</span></h1>
+
+            <p class="about-text">
+                We are a group of people who believe that everyone
+                deserves to live, study, and grow without fear of bullying.
+
+                Our mission is to spread awareness, encourage kindness,
+                and create a safe environment where everyone feels valued.
+
+                Together, we can make a difference.
+                Small acts of kindness can create a big impact.
+            </p>
+
+            <div class="quote">
+                "BE A BUDDY, NOT A BULLY."
+            </div>
+
+            <div class="about-cards">
+
+                <div class="about-card">
+                    <h2>01</h2>
+                    <h3>OUR MISSION</h3>
+                    <p>Spread awareness and stop bullying.</p>
+                </div>
+
+                <div class="about-card">
+                    <h2>02</h2>
+                    <h3>OUR PURPOSE</h3>
+                    <p>Create a safe and respectful environment.</p>
+                </div>
+
+                <div class="about-card">
+                    <h2>03</h2>
+                    <h3>OUR MESSAGE</h3>
+                    <p>Everyone deserves kindness and respect.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OUR FORM PAGE -->
+    <section id="form" class="page">
+
+        <div class="form-container">
+
+            <div class="form-info">
+
+                <p class="tag">WE ARE HERE FOR YOU</p>
+
+                <h1>
+                    SPEAK UP.<br>
+                    <span>WE LISTEN.</span>
+                </h1>
+
+                <p>
+                    Have you experienced or witnessed bullying?
+
+                    Don't be afraid to speak up.
+                    Your story matters and we are ready to listen.
+                </p>
+
+                <div class="form-quote">
+                    "YOU ARE NOT ALONE.
+                    WE STAND WITH YOU."
+                </div>
+
+            </div>
+
+
+            <div class="form-box">
+
+                <h2>Bullying Report Form</h2>
+
+                <p class="form-subtitle">
+                    Fill in the details below.
+                </p>
+
+
+                <form id="bullyingForm">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+
+                    <label>What happened?</label>
+
+                    <select required>
+                        <option value="">Choose an option</option>
+                        <option>Physical Bullying</option>
+                        <option>Verbal Bullying</option>
+                        <option>Cyberbullying</option>
+                        <option>Social Bullying</option>
+                        <option>Other</option>
+                    </select>
+
+
+                    <label>Tell us your story</label>
+
+                    <textarea
+                        rows="4"
+                        placeholder="Write your experience here..."
+                        required
+                    ></textarea>
+
+
+                    <label>Are you the victim or witness?</label>
+
+                    <select required>
+                        <option value="">Choose one</option>
+                        <option>Victim</option>
+                        <option>Witness</option>
+                    </select>
+
+
+                    <button type="submit" class="submit-btn">
+                        SUBMIT REPORT →
+                    </button>
+
+                </form>
+
+                <p id="success-message"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            STOP BULLYING.
+            | TOGETHER AGAINST BULLYING.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
